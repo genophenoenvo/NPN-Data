@@ -1,0 +1,12 @@
+Parameter,Setting
+Data Type:,Individual Phenometrics
+Start Date:,1950-01-01
+End Date:,2020-12-31
+States:,
+Species:,"alternateleaf dogwood (Cornus alternifolia), Appalachian Spring dogwood (Cornus florida-appalachianspring), Asiatic dogwood (Cornus officinalis), bunchberry dogwood (Cornus canadensis), flowering dogwood (Cornus florida), gray dogwood (Cornus racemosa), Kousa dogwood (Cornus kousa), Pacific dogwood (Cornus nuttallii), redosier dogwood (Cornus sericea), roughleaf dogwood (Cornus drummondii), roundleaf dogwood (Cornus rugosa), stiff dogwood (Cornus foemina), western cordilleran bunchberry (Cornus unalaschkensis), common lilac (Syringa vulgaris), Manchurian lilac (Syringa pubescens), Red Rothomagensis lilac (Syringa chinensis)"
+Phenophase Categories:,"Flowers, Leaves"
+Output Fields:,"Site Name, Lifecycle Duration, USDA PLANTS Symbol, AGDD, AGDD in F, Tmax Winter, Tmax Spring, Tmax Summer, Tmax Fall, Tmin Winter, Tmin Spring, Tmin Summer, Tmin Fall, Prcp Winter, Prcp Spring, Prcp Summer, Prcp Fall, Accum Prcp, Daylength"
+Quality Flags:,ignored
+Partner Groups:,
+Integrated Datasets:,
+Stations:,
