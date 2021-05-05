@@ -11,13 +11,15 @@ library(dplyr)
 library(tidyr)
 library(maps)
 library(ggplot2)
+library(sf)
+library(cowplot)
 ```
 
 Read in dogwood data extracted from NPN API and state polygons for plotting. 
 
 ```{r}
 base_map <- map_data("state")
-dogwood_obs <- read.csv("../data/raw_all_dogwood.csv")
+dogwood_obs <- read.csv("clonal_dogwoods/data/raw_all_dogwood.csv")
 ```
 
 Clean up date for plotting, restricting to only Cornus florida species. 
@@ -48,3 +50,92 @@ ggplot() +
   theme_classic() + 
   theme(legend.position = "top")
 ```
+
+Getting and plotting buffers around clonal points. 
+
+```{r}
+buffer_degrees <- 0.01
+
+clones_locations <- plot_obs %>% 
+  filter(Clone == "Yes") %>% 
+  select(latitude, longitude, year, individual_id) %>% 
+  st_as_sf(coords = c("longitude", "latitude")) %>% 
+  rename(clone_year = year, clone_individual_id = individual_id)
+
+clones_buffer <- st_buffer(clones_locations, dist = buffer_degrees)
+
+ggplot() +
+  geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
+               fill = "white", color = "grey") +
+  geom_sf(data = clones_buffer) +
+  geom_point(data = plot_obs[plot_obs$Clone == "Yes",], aes(x = longitude, y = latitude), size = 0.1)
+
+nonclones_locations <- plot_obs %>% 
+  filter(Clone == "No") %>% 
+  select(latitude, longitude, year, individual_id) %>% 
+  st_as_sf(coords = c("longitude", "latitude")) %>% 
+  rename(nonclone_year = year, nonclone_individual_id = individual_id)
+
+nonclones_in_buffer <- st_intersection(nonclones_locations, clones_buffer) %>% 
+  filter(clone_year == nonclone_year) %>% 
+  rename(nonclone_geometry = geometry) 
+
+final_clones_locations <- clones_locations %>% 
+  filter(clone_individual_id %in% nonclones_in_buffer$clone_individual_id)
+
+clones_plot <- ggplot() +
+  geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
+               fill = "white", color = "grey") +
+  geom_sf(data = final_clones_locations, color = "blue") +
+  coord_sf(xlim = c(-100, -70), ylim = c(30, 45))
+
+nonclones_plot <- ggplot() +
+  geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
+               fill = "white", color = "grey") +
+  geom_sf(data = nonclones_in_buffer) +
+  coord_sf(xlim = c(-100, -70), ylim = c(30, 45))
+
+
+plot_grid(clones_plot, nonclones_plot, ncol = 1)
+
+```
+
+What is 0.1 degrees in meters at a given latlon? 
+
+```{r}
+nonclone_threshold <- 5
+
+View(nonclones_in_buffer %>% 
+  count(clone_individual_id))
+
+
+subset_nonclones <- nonclones_in_buffer %>% 
+  group_by(clone_individual_id) %>% 
+  mutate(count = n()) %>% 
+  filter(count > nonclone_threshold) %>% 
+  ungroup()
+
+
+length(unique(subset_nonclones$clone_individual_id))
+length(unique(subset_nonclones$nonclone_geometry))
+length(unique(subset_nonclones$nonclone_individual_id))
+
+ggplot() +
+  geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
+               fill = "white", color = "grey") +
+  geom_sf(data = subset_nonclones, color = "blue") +
+  coord_sf(xlim = c(-87, -73), ylim = c(36, 45))
+
+subset_clones_locations <- clones_locations %>% 
+  filter(clone_individual_id %in% subset_nonclones$clone_individual_id)
+
+ggplot() +
+  geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
+               fill = "white", color = "grey") +
+  geom_sf(data = subset_clones_locations) +
+  coord_sf(xlim = c(-87, -73), ylim = c(36, 45)) +
+  facet_wrap(vars(clone_year))
+
+```
+
+
