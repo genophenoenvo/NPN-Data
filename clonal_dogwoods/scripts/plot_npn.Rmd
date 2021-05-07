@@ -19,7 +19,7 @@ Read in dogwood data extracted from NPN API and state polygons for plotting.
 
 ```{r}
 base_map <- map_data("state")
-dogwood_obs <- read.csv("clonal_dogwoods/data/raw_all_dogwood.csv")
+dogwood_obs <- read.csv("../data/raw_all_dogwood.csv")
 ```
 
 Clean up date for plotting, restricting to only Cornus florida species. 
@@ -64,12 +64,6 @@ clones_locations <- plot_obs %>%
 
 clones_buffer <- st_buffer(clones_locations, dist = buffer_degrees)
 
-ggplot() +
-  geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
-               fill = "white", color = "grey") +
-  geom_sf(data = clones_buffer) +
-  geom_point(data = plot_obs[plot_obs$Clone == "Yes",], aes(x = longitude, y = latitude), size = 0.1)
-
 nonclones_locations <- plot_obs %>% 
   filter(Clone == "No") %>% 
   select(latitude, longitude, year, individual_id) %>% 
@@ -95,47 +89,120 @@ nonclones_plot <- ggplot() +
   geom_sf(data = nonclones_in_buffer) +
   coord_sf(xlim = c(-100, -70), ylim = c(30, 45))
 
-
 plot_grid(clones_plot, nonclones_plot, ncol = 1)
 
 ```
 
-What is 0.1 degrees in meters at a given latlon? 
+Getting just from last year the clones with at least four nearby nonclones. 
+Distance between each set of points is less than a kilometer. 
 
 ```{r}
-nonclone_threshold <- 5
-
-View(nonclones_in_buffer %>% 
-  count(clone_individual_id))
-
-
-subset_nonclones <- nonclones_in_buffer %>% 
+final_clustered_dogwoods <- nonclones_in_buffer %>% 
+  filter(nonclone_year == 2020) %>% 
   group_by(clone_individual_id) %>% 
   mutate(count = n()) %>% 
-  filter(count > nonclone_threshold) %>% 
-  ungroup()
+  filter(count >= 4)
 
-
-length(unique(subset_nonclones$clone_individual_id))
-length(unique(subset_nonclones$nonclone_geometry))
-length(unique(subset_nonclones$nonclone_individual_id))
+length(unique(final_clustered_dogwoods$clone_individual_id))
+length(unique(final_clustered_dogwoods$nonclone_geometry))
+length(unique(final_clustered_dogwoods$nonclone_individual_id))
 
 ggplot() +
   geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
                fill = "white", color = "grey") +
-  geom_sf(data = subset_nonclones, color = "blue") +
-  coord_sf(xlim = c(-87, -73), ylim = c(36, 45))
-
-subset_clones_locations <- clones_locations %>% 
-  filter(clone_individual_id %in% subset_nonclones$clone_individual_id)
+  geom_sf(data = clones_locations[clones_locations$clone_individual_id == 229765,]) +
+  geom_sf(data = final_clustered_dogwoods[final_clustered_dogwoods$clone_individual_id == 229765,], color = "blue") +
+  geom_sf(data = clones_locations[clones_locations$clone_individual_id == 250718,]) +
+  geom_sf(data = final_clustered_dogwoods[final_clustered_dogwoods$clone_individual_id == 250718,], color = "blue")
 
 ggplot() +
   geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
                fill = "white", color = "grey") +
-  geom_sf(data = subset_clones_locations) +
-  coord_sf(xlim = c(-87, -73), ylim = c(36, 45)) +
-  facet_wrap(vars(clone_year))
+  geom_sf(data = clones_locations[clones_locations$clone_individual_id == 229765,]) +
+  geom_sf(data = final_clustered_dogwoods[final_clustered_dogwoods$clone_individual_id == 229765,], color = "blue") +
+  coord_sf(xlim = c(-76.23, -76.17), ylim = c(36.88, 36.94))
 
+ggplot() +
+  geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
+               fill = "white", color = "grey") +
+  geom_sf(data = clones_locations[clones_locations$clone_individual_id == 250718,]) +
+  geom_sf(data = final_clustered_dogwoods[final_clustered_dogwoods$clone_individual_id == 250718,], color = "blue") +
+  coord_sf(xlim = c(-80.0, -79.96), ylim = c(39.64, 39.66))
 ```
 
+Defining phenophases of interest: 
+
+1. "First leaf" is first date of "Leaves" phenophase description (id 483) for each individual
+2. "First flower" is first date of "Flowers or flower buds" phenophase description (id 500) for each individual
+3. "Senescence" is first date of "Colored leaves" phenophase description (id 498) for each individual
+
+```{r}
+pheno_data_dic <- read.csv("../data/ancillary_phenophase_definition_data.csv")
+
+pheno_data_dic %>% 
+  filter(Phenophase_Name == "Leaves", 
+         Phenophase_ID == 483) %>% 
+  select(Phenophase_Definition) %>% 
+  unique()
+
+pheno_data_dic %>% 
+  filter(Phenophase_Name == "Flowers or flower buds", 
+         Phenophase_ID == 500) %>% 
+  select(Phenophase_Definition) %>% 
+  unique()
+
+pheno_data_dic %>% 
+  filter(Phenophase_Name == "Colored leaves",
+         Phenophase_ID == 498) %>% 
+  select(Phenophase_Definition) %>% 
+  unique()
+```
+
+```{r}
+
+phenophase_df <- dogwood_obs %>% 
+  separate(observation_date, c("year", "month", "day"), remove = FALSE) %>% 
+  filter(individual_id %in% final_clustered_dogwoods$clone_individual_id | individual_id %in% final_clustered_dogwoods$nonclone_individual_id, 
+         year == 2020, 
+         phenophase_id %in% c(483, 500, 498), 
+         phenophase_status == 1) %>% 
+  group_by(individual_id, phenophase_description) %>% 
+  arrange() %>% 
+  slice(1) %>% 
+  ungroup() %>% 
+  mutate(observation_date = as.Date(observation_date))
+
+clone_1 <- final_clustered_dogwoods %>% 
+  filter(clone_individual_id == 229765) %>% 
+  pivot_longer(cols = c(clone_individual_id, nonclone_individual_id), names_to = "individual_id", values_to = "id") %>% 
+  group_by(id) %>% 
+  slice(1) %>% 
+  select(individual_id, id) %>% 
+  separate(individual_id, into = "dogwood", sep = "_") %>%
+  mutate(cluster = 1)
+
+clone_2 <- final_clustered_dogwoods %>% 
+  filter(clone_individual_id == 250718) %>% 
+  pivot_longer(cols = c(clone_individual_id, nonclone_individual_id), names_to = "individual_id", values_to = "id") %>% 
+  group_by(id) %>% 
+  slice(1) %>% 
+  select(individual_id, id) %>% 
+  separate(individual_id, into = "dogwood", sep = "_") %>%
+  mutate(cluster = 2)
+
+clone_lookup_table <- bind_rows(clone_1, clone_2)
+
+phenophase_df_plot <- left_join(phenophase_df, clone_lookup_table, by = c("individual_id" = "id")) %>% 
+  mutate(y_points = runif(nrow(.), min = -1, max = 1))
+
+ggplot(phenophase_df_plot, aes(x = observation_date, y = y_points, color = dogwood)) +
+  geom_point() +
+  geom_jitter() +
+  facet_grid(cluster ~ phenophase_description, scales = "free_y") +
+  theme_light() +
+  labs(x = "Date", y = "") +
+  theme(axis.line.y = element_blank(), 
+        axis.ticks.y = element_blank(), 
+        axis.text.y = element_blank())
+```
 
