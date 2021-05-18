@@ -1,6 +1,6 @@
 ---
 title: "Exploratory Plotting of Dogwood Clones"
-output: github_document
+output: html_document
 urlcolor: blue
 ---
 
@@ -19,7 +19,7 @@ Read in dogwood data extracted from NPN API and state polygons for plotting.
 
 ```{r}
 base_map <- map_data("state")
-dogwood_obs <- read.csv("../data/raw_all_dogwood.csv")
+dogwood_obs <- read.csv("clonal_dogwoods/data/raw_all_dogwood.csv")
 ```
 
 Clean up date for plotting, restricting to only Cornus florida species. 
@@ -205,4 +205,16 @@ ggplot(phenophase_df_plot, aes(x = observation_date, y = y_points, color = dogwo
         axis.ticks.y = element_blank(), 
         axis.text.y = element_blank())
 ```
+
+Repeat for previous years of data: only records for the two clones are in 2020
+
+```{r}
+just_clone <- dogwood_obs %>% filter(individual_id %in% c(229765, 250718))
+range(just_clone$observation_date)
+```
+
+
+
+
+
 
