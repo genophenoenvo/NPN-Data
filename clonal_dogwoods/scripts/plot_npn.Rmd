@@ -1,8 +1,10 @@
 ---
-title: "Exploratory Plotting of Dogwood Clones"
+title: "Getting initial set of dogwood clones and nonclones"
 output: html_document
 urlcolor: blue
 ---
+
+### Read in packages and data
 
 Read in necessary libraries. 
 
@@ -19,42 +21,30 @@ Read in dogwood data extracted from NPN API and state polygons for plotting.
 
 ```{r}
 base_map <- map_data("state")
-dogwood_obs <- read.csv("clonal_dogwoods/data/raw_all_dogwood.csv")
+dogwood_obs <- read.csv("../data/raw_all_dogwood.csv") %>% 
+    separate(observation_date, c("year", "month", "day"), remove = FALSE)
 ```
+
+### Clean data
 
 Clean up date for plotting, restricting to only Cornus florida species. 
 
 ```{r}
-plot_obs <- dogwood_obs %>% 
-  separate(observation_date, c("year", "month", "day"), remove = FALSE) %>% 
+plot_obs <- dogwood_obs %>%
+  separate(observation_date, c("year", "month", "day"), remove = FALSE) %>%
   group_by(year, individual_id) %>%
-  slice(1) %>% 
-  ungroup() %>% 
-  filter(longitude > -130, 
-         species %in% c("florida", "florida-appalachianspring")) %>% 
-  mutate(Clone = ifelse(species == "florida-appalachianspring", "Yes", "No"), 
+  slice(1) %>%
+  ungroup() %>%
+  filter(longitude > -130,
+         species %in% c("florida", "florida-appalachianspring")) %>%
+  mutate(Clone = ifelse(species == "florida-appalachianspring", "Yes", "No"),
          Clone = factor(Clone, levels = c("Yes", "No")))
 ```
 
-Plot locations of dogwoods and clones by year. 
+Getting nonclonal dogwoods within buffer around clonal dogwoods. 
 
 ```{r}
-ggplot() +
-  geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
-               fill = "white", color = "grey") +
-  geom_point(data = plot_obs, aes(x = longitude, y = latitude, color = Clone)) +
-  scale_color_manual(values = c("red", "black")) +
-  coord_quickmap() +
-  facet_wrap(~year) +
-  labs(x = "Longitude", y = "Latitude") +
-  theme_classic() + 
-  theme(legend.position = "top")
-```
-
-Getting and plotting buffers around clonal points. 
-
-```{r}
-buffer_degrees <- 0.01
+buffer_degrees <- 0.1
 
 clones_locations <- plot_obs %>% 
   filter(Clone == "Yes") %>% 
@@ -72,63 +62,91 @@ nonclones_locations <- plot_obs %>%
 
 nonclones_in_buffer <- st_intersection(nonclones_locations, clones_buffer) %>% 
   filter(clone_year == nonclone_year) %>% 
-  rename(nonclone_geometry = geometry) 
-
-final_clones_locations <- clones_locations %>% 
-  filter(clone_individual_id %in% nonclones_in_buffer$clone_individual_id)
-
-clones_plot <- ggplot() +
-  geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
-               fill = "white", color = "grey") +
-  geom_sf(data = final_clones_locations, color = "blue") +
-  coord_sf(xlim = c(-100, -70), ylim = c(30, 45))
-
-nonclones_plot <- ggplot() +
-  geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
-               fill = "white", color = "grey") +
-  geom_sf(data = nonclones_in_buffer) +
-  coord_sf(xlim = c(-100, -70), ylim = c(30, 45))
-
-plot_grid(clones_plot, nonclones_plot, ncol = 1)
-
-```
-
-Getting just from last year the clones with at least four nearby nonclones. 
-Distance between each set of points is less than a kilometer. 
-
-```{r}
-final_clustered_dogwoods <- nonclones_in_buffer %>% 
-  filter(nonclone_year == 2020) %>% 
+  rename(nonclone_geometry = geometry) %>% 
   group_by(clone_individual_id) %>% 
   mutate(count = n()) %>% 
   filter(count >= 4)
 
-length(unique(final_clustered_dogwoods$clone_individual_id))
-length(unique(final_clustered_dogwoods$nonclone_geometry))
-length(unique(final_clustered_dogwoods$nonclone_individual_id))
-
-ggplot() +
-  geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
-               fill = "white", color = "grey") +
-  geom_sf(data = clones_locations[clones_locations$clone_individual_id == 229765,]) +
-  geom_sf(data = final_clustered_dogwoods[final_clustered_dogwoods$clone_individual_id == 229765,], color = "blue") +
-  geom_sf(data = clones_locations[clones_locations$clone_individual_id == 250718,]) +
-  geom_sf(data = final_clustered_dogwoods[final_clustered_dogwoods$clone_individual_id == 250718,], color = "blue")
-
-ggplot() +
-  geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
-               fill = "white", color = "grey") +
-  geom_sf(data = clones_locations[clones_locations$clone_individual_id == 229765,]) +
-  geom_sf(data = final_clustered_dogwoods[final_clustered_dogwoods$clone_individual_id == 229765,], color = "blue") +
-  coord_sf(xlim = c(-76.23, -76.17), ylim = c(36.88, 36.94))
-
-ggplot() +
-  geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
-               fill = "white", color = "grey") +
-  geom_sf(data = clones_locations[clones_locations$clone_individual_id == 250718,]) +
-  geom_sf(data = final_clustered_dogwoods[final_clustered_dogwoods$clone_individual_id == 250718,], color = "blue") +
-  coord_sf(xlim = c(-80.0, -79.96), ylim = c(39.64, 39.66))
+expanded_data <- data.frame(year = nonclones_in_buffer$nonclone_year, 
+                   clone_id = nonclones_in_buffer$clone_individual_id, 
+                   nonclone_id = nonclones_in_buffer$nonclone_individual_id)
 ```
+
+Using clonal and nonclonal individuals ID to get NPN data. Filtering to first of year occurrence of three phenophases, then filtering further to only clones with two or more nonclonals nearby and with corresponding phenophases. 
+
+```{r}
+nonclones_df <- full_join(expanded_data, dogwood_obs, by = c("year" = "year", "nonclone_id" = "individual_id"), keep = TRUE)
+
+clones_df <- full_join(expanded_data, dogwood_obs, by = c("year" = "year", "clone_id" = "individual_id"), keep = TRUE) %>% 
+  mutate(nonclone_id = NA)
+
+nonclones_clones_initial <- bind_rows(nonclones_df, clones_df) %>% 
+  select(-year.x) %>% 
+  filter(!is.na(clone_id), 
+         phenophase_id %in% c(483, 500, 498), 
+         phenophase_status == 1) %>% 
+  group_by(individual_id, phenophase_description) %>% 
+  arrange() %>% 
+  slice(1) %>% 
+  ungroup() %>% 
+  mutate(observation_date = as.Date(observation_date))
+
+clones_list <- nonclones_clones_initial %>% 
+  filter(is.na(nonclone_id)) %>% 
+  unite(unique_id, clone_id, year.y, sep = "-") %>% 
+  distinct(unique_id)
+
+nonclones_clones_final <- nonclones_clones_initial %>% 
+  unite(unique_id, clone_id, year.y, sep = "-", remove = FALSE) %>% 
+  filter(unique_id %in% clones_list$unique_id) %>% 
+  group_by(unique_id) %>% 
+  mutate(n_clones = n_distinct(nonclone_id, na.rm = TRUE)) %>% 
+  filter(n_clones >= 2) %>% 
+  mutate(clone = ifelse(is.na(nonclone_id), "yes", "no")) %>% 
+  group_by(unique_id, phenophase_description) %>% 
+  filter(any(clone == "yes"))
+
+nonclones_clones_final$y_points = runif(nrow(nonclones_clones_final), min = -1, max = 1)
+
+write.csv(nonclones_clones_final, "../data/initial_clones_nonclones_dogwood.csv")
+```
+
+### Dataset summary numbers
+
+- Number of clones: `r length(unique(nonclones_clones_final$clone_id))`
+- Number of nonclones: `r length(unique(nonclones_clones_final$nonclone_id))`
+- Number of clusters (by clone and phenophase): `r nonclones_clones_final %>% group_by(unique_id, phenophase_description) %>% count() %>% nrow()`
+
+### Plot data
+
+Plot time series of clonal and nonclonal phenophase occurrences by clone. 
+
+```{r}
+ggplot(nonclones_clones_final, aes(x = observation_date, y = y_points, color = clone)) +
+  geom_point() +
+  facet_grid(unique_id ~ phenophase_description, scales = "free_y") +
+  theme_light() +
+  labs(x = "Date", y = "") +
+  theme(axis.line.y = element_blank(), 
+        axis.ticks.y = element_blank(), 
+        axis.text.y = element_blank())
+```
+
+Plot locations of clones and nonclones. 
+
+```{r}
+ggplot() +
+  geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
+               fill = "white", color = "grey") +
+  geom_point(data = nonclones_clones_final, aes(x = longitude, y = latitude, color = clone)) +
+  coord_quickmap() +
+  facet_wrap(~year.y) +
+  labs(x = "Longitude", y = "Latitude") +
+  theme_classic() + 
+  theme(legend.position = "top")
+```
+
+### NPN phenophase definitions
 
 Defining phenophases of interest: 
 
@@ -157,64 +175,4 @@ pheno_data_dic %>%
   select(Phenophase_Definition) %>% 
   unique()
 ```
-
-```{r}
-
-phenophase_df <- dogwood_obs %>% 
-  separate(observation_date, c("year", "month", "day"), remove = FALSE) %>% 
-  filter(individual_id %in% final_clustered_dogwoods$clone_individual_id | individual_id %in% final_clustered_dogwoods$nonclone_individual_id, 
-         year == 2020, 
-         phenophase_id %in% c(483, 500, 498), 
-         phenophase_status == 1) %>% 
-  group_by(individual_id, phenophase_description) %>% 
-  arrange() %>% 
-  slice(1) %>% 
-  ungroup() %>% 
-  mutate(observation_date = as.Date(observation_date))
-
-clone_1 <- final_clustered_dogwoods %>% 
-  filter(clone_individual_id == 229765) %>% 
-  pivot_longer(cols = c(clone_individual_id, nonclone_individual_id), names_to = "individual_id", values_to = "id") %>% 
-  group_by(id) %>% 
-  slice(1) %>% 
-  select(individual_id, id) %>% 
-  separate(individual_id, into = "dogwood", sep = "_") %>%
-  mutate(cluster = 1)
-
-clone_2 <- final_clustered_dogwoods %>% 
-  filter(clone_individual_id == 250718) %>% 
-  pivot_longer(cols = c(clone_individual_id, nonclone_individual_id), names_to = "individual_id", values_to = "id") %>% 
-  group_by(id) %>% 
-  slice(1) %>% 
-  select(individual_id, id) %>% 
-  separate(individual_id, into = "dogwood", sep = "_") %>%
-  mutate(cluster = 2)
-
-clone_lookup_table <- bind_rows(clone_1, clone_2)
-
-phenophase_df_plot <- left_join(phenophase_df, clone_lookup_table, by = c("individual_id" = "id")) %>% 
-  mutate(y_points = runif(nrow(.), min = -1, max = 1))
-
-ggplot(phenophase_df_plot, aes(x = observation_date, y = y_points, color = dogwood)) +
-  geom_point() +
-  geom_jitter() +
-  facet_grid(cluster ~ phenophase_description, scales = "free_y") +
-  theme_light() +
-  labs(x = "Date", y = "") +
-  theme(axis.line.y = element_blank(), 
-        axis.ticks.y = element_blank(), 
-        axis.text.y = element_blank())
-```
-
-Repeat for previous years of data: only records for the two clones are in 2020
-
-```{r}
-just_clone <- dogwood_obs %>% filter(individual_id %in% c(229765, 250718))
-range(just_clone$observation_date)
-```
-
-
-
-
-
 
