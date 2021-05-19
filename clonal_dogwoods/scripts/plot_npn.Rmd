@@ -1,0 +1,178 @@
+---
+title: "Getting initial set of dogwood clones and nonclones"
+output: html_document
+urlcolor: blue
+---
+
+### Read in packages and data
+
+Read in necessary libraries. 
+
+```{r, message=FALSE, warning=FALSE}
+library(dplyr)
+library(tidyr)
+library(maps)
+library(ggplot2)
+library(sf)
+library(cowplot)
+```
+
+Read in dogwood data extracted from NPN API and state polygons for plotting. 
+
+```{r}
+base_map <- map_data("state")
+dogwood_obs <- read.csv("../data/raw_all_dogwood.csv") %>% 
+    separate(observation_date, c("year", "month", "day"), remove = FALSE)
+```
+
+### Clean data
+
+Clean up date for plotting, restricting to only Cornus florida species. 
+
+```{r}
+plot_obs <- dogwood_obs %>%
+  separate(observation_date, c("year", "month", "day"), remove = FALSE) %>%
+  group_by(year, individual_id) %>%
+  slice(1) %>%
+  ungroup() %>%
+  filter(longitude > -130,
+         species %in% c("florida", "florida-appalachianspring")) %>%
+  mutate(Clone = ifelse(species == "florida-appalachianspring", "Yes", "No"),
+         Clone = factor(Clone, levels = c("Yes", "No")))
+```
+
+Getting nonclonal dogwoods within buffer around clonal dogwoods. 
+
+```{r}
+buffer_degrees <- 0.1
+
+clones_locations <- plot_obs %>% 
+  filter(Clone == "Yes") %>% 
+  select(latitude, longitude, year, individual_id) %>% 
+  st_as_sf(coords = c("longitude", "latitude")) %>% 
+  rename(clone_year = year, clone_individual_id = individual_id)
+
+clones_buffer <- st_buffer(clones_locations, dist = buffer_degrees)
+
+nonclones_locations <- plot_obs %>% 
+  filter(Clone == "No") %>% 
+  select(latitude, longitude, year, individual_id) %>% 
+  st_as_sf(coords = c("longitude", "latitude")) %>% 
+  rename(nonclone_year = year, nonclone_individual_id = individual_id)
+
+nonclones_in_buffer <- st_intersection(nonclones_locations, clones_buffer) %>% 
+  filter(clone_year == nonclone_year) %>% 
+  rename(nonclone_geometry = geometry) %>% 
+  group_by(clone_individual_id) %>% 
+  mutate(count = n()) %>% 
+  filter(count >= 4)
+
+expanded_data <- data.frame(year = nonclones_in_buffer$nonclone_year, 
+                   clone_id = nonclones_in_buffer$clone_individual_id, 
+                   nonclone_id = nonclones_in_buffer$nonclone_individual_id)
+```
+
+Using clonal and nonclonal individuals ID to get NPN data. Filtering to first of year occurrence of three phenophases, then filtering further to only clones with two or more nonclonals nearby and with corresponding phenophases. 
+
+```{r}
+nonclones_df <- full_join(expanded_data, dogwood_obs, by = c("year" = "year", "nonclone_id" = "individual_id"), keep = TRUE)
+
+clones_df <- full_join(expanded_data, dogwood_obs, by = c("year" = "year", "clone_id" = "individual_id"), keep = TRUE) %>% 
+  mutate(nonclone_id = NA)
+
+nonclones_clones_initial <- bind_rows(nonclones_df, clones_df) %>% 
+  select(-year.x) %>% 
+  filter(!is.na(clone_id), 
+         phenophase_id %in% c(483, 500, 498), 
+         phenophase_status == 1) %>% 
+  group_by(individual_id, phenophase_description) %>% 
+  arrange() %>% 
+  slice(1) %>% 
+  ungroup() %>% 
+  mutate(observation_date = as.Date(observation_date))
+
+clones_list <- nonclones_clones_initial %>% 
+  filter(is.na(nonclone_id)) %>% 
+  unite(unique_id, clone_id, year.y, sep = "-") %>% 
+  distinct(unique_id)
+
+nonclones_clones_final <- nonclones_clones_initial %>% 
+  unite(unique_id, clone_id, year.y, sep = "-", remove = FALSE) %>% 
+  filter(unique_id %in% clones_list$unique_id) %>% 
+  group_by(unique_id) %>% 
+  mutate(n_clones = n_distinct(nonclone_id, na.rm = TRUE)) %>% 
+  filter(n_clones >= 2) %>% 
+  mutate(clone = ifelse(is.na(nonclone_id), "yes", "no")) %>% 
+  group_by(unique_id, phenophase_description) %>% 
+  filter(any(clone == "yes"))
+
+nonclones_clones_final$y_points = runif(nrow(nonclones_clones_final), min = -1, max = 1)
+
+write.csv(nonclones_clones_final, "../data/initial_clones_nonclones_dogwood.csv")
+```
+
+### Dataset summary numbers
+
+- Number of clones: `r length(unique(nonclones_clones_final$clone_id))`
+- Number of nonclones: `r length(unique(nonclones_clones_final$nonclone_id))`
+- Number of clusters (by clone and phenophase): `r nonclones_clones_final %>% group_by(unique_id, phenophase_description) %>% count() %>% nrow()`
+
+### Plot data
+
+Plot time series of clonal and nonclonal phenophase occurrences by clone. 
+
+```{r}
+ggplot(nonclones_clones_final, aes(x = observation_date, y = y_points, color = clone)) +
+  geom_point() +
+  facet_grid(unique_id ~ phenophase_description, scales = "free_y") +
+  theme_light() +
+  labs(x = "Date", y = "") +
+  theme(axis.line.y = element_blank(), 
+        axis.ticks.y = element_blank(), 
+        axis.text.y = element_blank())
+```
+
+Plot locations of clones and nonclones. 
+
+```{r}
+ggplot() +
+  geom_polygon(data = base_map, aes(x = long, y = lat, group = group), 
+               fill = "white", color = "grey") +
+  geom_point(data = nonclones_clones_final, aes(x = longitude, y = latitude, color = clone)) +
+  coord_quickmap() +
+  facet_wrap(~year.y) +
+  labs(x = "Longitude", y = "Latitude") +
+  theme_classic() + 
+  theme(legend.position = "top")
+```
+
+### NPN phenophase definitions
+
+Defining phenophases of interest: 
+
+1. "First leaf" is first date of "Leaves" phenophase description (id 483) for each individual
+2. "First flower" is first date of "Flowers or flower buds" phenophase description (id 500) for each individual
+3. "Senescence" is first date of "Colored leaves" phenophase description (id 498) for each individual
+
+```{r}
+pheno_data_dic <- read.csv("../data/ancillary_phenophase_definition_data.csv")
+
+pheno_data_dic %>% 
+  filter(Phenophase_Name == "Leaves", 
+         Phenophase_ID == 483) %>% 
+  select(Phenophase_Definition) %>% 
+  unique()
+
+pheno_data_dic %>% 
+  filter(Phenophase_Name == "Flowers or flower buds", 
+         Phenophase_ID == 500) %>% 
+  select(Phenophase_Definition) %>% 
+  unique()
+
+pheno_data_dic %>% 
+  filter(Phenophase_Name == "Colored leaves",
+         Phenophase_ID == 498) %>% 
+  select(Phenophase_Definition) %>% 
+  unique()
+```
+
