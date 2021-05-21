@@ -1,0 +1,25 @@
+Experimental
+
+File:
+DogWoodDaysofSoring_dump.gpkg.gz  3.5M
+
+is a gziped GeoPackage? file
+
+A set of layers exported from QGIS  then gzipped to reduce the 20M down to 3.5M
+I expect you may need to `gunzip` it prior to using it.
+
+the layers include  (2007 and later?)
+	- all clones
+	- all non clones
+	- Prism plant hardiness zones
+	- KR's anchor-clones
+	- KR's sample-candidates within several km of the anchor-clones
+
+
+File:
+DogWoodDaysOfSpring.qgz   12K 
+
+	The "QGIS" project file for this project on my machine. 
+ 	including just in case it is useful where but may be 
+	too tightly coupled with my PostgreSQL/PostGIS instance
+	(hence the 	geopackage)
