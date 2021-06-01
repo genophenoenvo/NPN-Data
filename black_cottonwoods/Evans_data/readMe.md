@@ -40,39 +40,35 @@ Average of the numerical bud set score in the BS100902, BS100916, and BS101001 c
 
 ## Clat_2010_BF.csv
 Observations of spring bud flush in the Clatskanie OR garden. Every row represents data for one P. trichocarpa genotype. Each genotype will have multiple rows representing replicates in different locations in the garden.
-### Geno
-Name of the P. trichocarpa genotype. This is an alpha-numeric string.
 ### Block
 Refers to the "block" in the randomized block design. Acceptable values are 1, 2, 3, and Replacement.
 ### Row
 Refers to the row in the block where the replicate was grown. Acceptable values are the letters of the alphabet, C thru Z, ZA thru ZZ, ZZA thru ZZJ.
 ### Column
 Refers to the column in the block where the replicate was grown. Acceptable values are integers 1 thru 68.
-### BF100401
-Observation of bud flush made on 1 April 2010. See phenology_scoring.pdf for an explanation of the numerical integer score. Acceptable values are integers 0 thru 5.
-### BF100422
-Observation of bud flush made on 22 April 2010. See phenology_scoring.pdf for an explanation of the numerical integer score. Acceptable values are integers 0 thru 5.
-### BFavg2010
-Average of the numerical bud flush score in the BF100401 and BF100422 columns. Acceptable values are numerical float.
+### Geno
+Name of the P. trichocarpa genotype. This is an alpha-numeric string.
+### BF_2010
+Observation of bud flush made on X. See phenology_scoring.pdf for an explanation of the numerical integer score. Acceptable values are integers 0 thru 5.
 
 ## Clat_2010_BS.csv
 Observations of fall bud set in the Clatskanie OR garden. Every row represents data for one P. trichocarpa genotype. Each genotype will have multiple rows representing replicates in different locations in the garden.
-### Geno
-Name of the P. trichocarpa genotype. This is an alpha-numeric string.
 ### Block
 Refers to the "block" in the randomized block design. Acceptable values are 1, 2, 3, and Replacement.
 ### Row
 Refers to the row in the block where the replicate was grown. Acceptable values are the letters of the alphabet, C thru Z, ZA thru ZZ, ZZA thru ZZJ.
 ### Column
 Refers to the column in the block where the replicate was grown. Acceptable values are integers 1 thru 68.
-### BS_100902
-Observation of bud set made on 2 Sept 2010. See phenology_scoring.pdf for an explanation of the numerical integer score. Acceptable values are integers 1 thru 6.
-### BS_100916
-Observation of bud set made on 16 Sept 2010. See phenology_scoring.pdf for an explanation of the numerical integer score. Acceptable values are integers 1 thru 6.
-### BS_101001
-Observation of bud set made on 1 Oct 2010. See phenology_scoring.pdf for an explanation of the numerical integer score. Acceptable values are integers 1 thru 6.
+### Geno
+Name of the P. trichocarpa genotype. This is an alpha-numeric string.
+### BS_1
+Observation of bud set made on X. See phenology_scoring.pdf for an explanation of the numerical integer score. Acceptable values are integers 1 thru 6.
+### BS_2
+Observation of bud set made on X. See phenology_scoring.pdf for an explanation of the numerical integer score. Acceptable values are integers 1 thru 6.
+### BS_3
+Observation of bud set made on X. See phenology_scoring.pdf for an explanation of the numerical integer score. Acceptable values are integers 1 thru 6.
 ### BSavg2010
-Average of the numerical bud set score in the BS100902, BS100916, and BS101001 columns. Acceptable values are numerical float.
+Average of the numerical bud set score in the BS1, BS, and BS3 columns. Acceptable values are numerical float.
 
 ## Corv_2010_BF.csv
 Observations of spring bud flush in the Corvallis OR garden. Every row represents data for one P. trichocarpa genotype. Each genotype will have multiple rows representing replicates in different locations in the garden.
@@ -84,11 +80,11 @@ Refers to the "block" in the randomized block design. Acceptable values are 1, 2
 Refers to the row in the block where the replicate was grown. Acceptable values are the letters of the alphabet, C thru Z, ZA thru ZZ, ZZA thru ZZJ.
 ### Column
 Refers to the column in the block where the replicate was grown. Acceptable values are integers 1 thru 68.
-### BF100401
+### BF1_2010
 Observation of bud flush made on 1 April 2010. See phenology_scoring.pdf for an explanation of the numerical integer score. Acceptable values are integers 0 thru 5.
-### BF100422
+### BF2_2010
 Observation of bud flush made on 22 April 2010. See phenology_scoring.pdf for an explanation of the numerical integer score. Acceptable values are integers 0 thru 5.
-### BFavg2010
+### BF_avg_2010
 Average of the numerical bud flush score in the BF100401 and BF100422 columns. Acceptable values are numerical float.
 
 ## Corv_2010_BS.csv
@@ -101,13 +97,15 @@ Refers to the "block" in the randomized block design. Acceptable values are 1, 2
 Refers to the row in the block where the replicate was grown. Acceptable values are the letters of the alphabet, C thru Z, ZA thru ZZ, ZZA thru ZZJ.
 ### Column
 Refers to the column in the block where the replicate was grown. Acceptable values are integers 1 thru 68.
-### BS_100902
+### BS_2009
 Observation of bud set made on 2 Sept 2010. See phenology_scoring.pdf for an explanation of the numerical integer score. Acceptable values are integers 1 thru 6.
-### BS_100916
+### BS10_1
 Observation of bud set made on 16 Sept 2010. See phenology_scoring.pdf for an explanation of the numerical integer score. Acceptable values are integers 1 thru 6.
-### BS_101001
+### BS10_2
 Observation of bud set made on 1 Oct 2010. See phenology_scoring.pdf for an explanation of the numerical integer score. Acceptable values are integers 1 thru 6.
-### BSavg2010
+### BS10_3
+Observation of bud set made on 1 Oct 2010. See phenology_scoring.pdf for an explanation of the numerical integer score. Acceptable values are integers 1 thru 6.
+### BSave_2010
 Average of the numerical bud set score in the BS100902, BS100916, and BS101001 columns. Acceptable values are numerical float.
 
 ## phenology_scoring.pdf
