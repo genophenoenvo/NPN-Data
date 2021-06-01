@@ -19,7 +19,7 @@ Observation of bud flush made on 22 April 2010. See phenology_scoring.pdf for an
 ### BFavg2010
 Average of the numerical bud flush score in the BF100401 and BF100422 columns. Acceptable values are numerical float.
 
-## CA_2010_BS
+## CA_2010_BS.csv
 Observations of fall bud set in the Placerville CA garden. Every row represents data for one P. trichocarpa genotype. Each genotype will have multiple rows representing replicates in different locations in the garden.
 ### Geno
 Name of the P. trichocarpa genotype. This is an alpha-numeric string.
@@ -38,7 +38,7 @@ Observation of bud set made on 1 Oct 2010. See phenology_scoring.pdf for an expl
 ### BSavg2010
 Average of the numerical bud set score in the BS100902, BS100916, and BS101001 columns. Acceptable values are numerical float.
 
-##Clat_2010_BF
+## Clat_2010_BF.csv
 Observations of spring bud flush in the Clatskanie OR garden. Every row represents data for one P. trichocarpa genotype. Each genotype will have multiple rows representing replicates in different locations in the garden.
 ### Geno
 Name of the P. trichocarpa genotype. This is an alpha-numeric string.
@@ -55,7 +55,7 @@ Observation of bud flush made on 22 April 2010. See phenology_scoring.pdf for an
 ### BFavg2010
 Average of the numerical bud flush score in the BF100401 and BF100422 columns. Acceptable values are numerical float.
 
-##Clat_2010_BS
+## Clat_2010_BS.csv
 Observations of fall bud set in the Clatskanie OR garden. Every row represents data for one P. trichocarpa genotype. Each genotype will have multiple rows representing replicates in different locations in the garden.
 ### Geno
 Name of the P. trichocarpa genotype. This is an alpha-numeric string.
@@ -74,7 +74,7 @@ Observation of bud set made on 1 Oct 2010. See phenology_scoring.pdf for an expl
 ### BSavg2010
 Average of the numerical bud set score in the BS100902, BS100916, and BS101001 columns. Acceptable values are numerical float.
 
-##Corv_2010_BF
+## Corv_2010_BF.csv
 Observations of spring bud flush in the Corvallis OR garden. Every row represents data for one P. trichocarpa genotype. Each genotype will have multiple rows representing replicates in different locations in the garden.
 ### Geno
 Name of the P. trichocarpa genotype. This is an alpha-numeric string.
@@ -91,7 +91,7 @@ Observation of bud flush made on 22 April 2010. See phenology_scoring.pdf for an
 ### BFavg2010
 Average of the numerical bud flush score in the BF100401 and BF100422 columns. Acceptable values are numerical float.
 
-##Corv_2010_BS
+## Corv_2010_BS.csv
 Observations of fall bud set in the Corvallis OR garden. Every row represents data for one P. trichocarpa genotype. Each genotype will have multiple rows representing replicates in different locations in the garden.
 ### Geno
 Name of the P. trichocarpa genotype. This is an alpha-numeric string.
@@ -110,5 +110,5 @@ Observation of bud set made on 1 Oct 2010. See phenology_scoring.pdf for an expl
 ### BSavg2010
 Average of the numerical bud set score in the BS100902, BS100916, and BS101001 columns. Acceptable values are numerical float.
 
-##phenology_scoring.pdf
+## phenology_scoring.pdf
 Scoring guide used to determine the integers used in the obervations of bud set (page 2) and bud flush (page 1). 
