@@ -1,0 +1,211 @@
+---
+title: "Exploring NPN Sorghastrum data"
+author: "Jessica Guo"
+date: "5/5/2021"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+In accordance with the Year 2 goals of the NSF grant, we organize and explore phenology data from the National Phenology Network (NPN) of the genus *Sorghastrum*, which is a sister genus to *Sorghum*. One possibility is to harmonize both the phenology responses and the environmental predictors such that the ML model of *Sorghum* can be executed and evaluated for model fit. 
+
+However, given the disparate research purposes and experimental design, we will first explore the NPN dataset to determine the best path forward. 
+
+```{r library, message = FALSE}
+library(dplyr)
+library(ggplot2)
+```
+
+### Obtaining and visiualizing data
+
+Individual phenometrics data for *Sorghastrum nutans* was obtained via the NPN [Phenology Observation Portal](https://data.usanpn.org/observations/get-started). Search parameters included leaf and flower phenophases for all dates and locations observed for this species. Search parameters and phenometrics data are saved in `/NPN-Data/Sorghastrum/data`. 
+
+```{r data}
+# Read in dataset
+df <- read.csv("../data/individual_phenometrics_data.csv",
+               na.strings = "-9999") %>%
+  mutate(Phenophase_ID = factor(Phenophase_ID, 
+                                levels = c(492, 489, 493, 494, 502)),
+         Phenophase_Description = factor(Phenophase_Description, 
+                                         levels = c("Initial growth (grasses/sedges)",
+                                                    "Leaves (grasses)",
+                                                    "Flower heads (grasses/sedges)", 
+                                                    "Open flowers (grasses/sedges)",
+                                                    "Pollen release (flowers)")),
+         geo = paste(Latitude, Longitude))
+```
+
+Summarize data by unique locations and unique individuals. From a total of 389 observations, 50 individuals from 12 unique locations are represented. 
+```{r summary, message = FALSE}
+sumloc.df <- df %>%
+  group_by(geo) %>%
+  summarize(lat = unique(Latitude),
+            long = unique(Longitude),
+            nobs = length(Phenophase_Description))
+sumind.df <- df %>%
+  group_by(Individual_ID) %>%
+  summarize(lat = unique(Latitude),
+            long = unique(Longitude),
+            nobs = length(Phenophase_Description))
+```
+
+Plot map of unique locations, with color axis representing the number of individual-phenophase observations. 
+
+```{r map, echo = FALSE, fig.width = 7, fig.height = 3.5}
+conus_states<- map_data("state")
+
+fig_map <- ggplot() +
+  geom_polygon(data = conus_states, aes(x = long, y = lat, group = group), 
+               fill = "white", color = "black") +
+  geom_point(data = sumloc.df, aes(x = long, y = lat, color = as.factor(nobs)), size = 2) +
+  scale_color_brewer(type = "div", palette = "PiYG") +
+  coord_cartesian(xlim = c(-100, -70), ylim = c(35, 48)) +
+  theme_bw(base_size = 12) +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.title = element_blank())
+print(fig_map)
+```
+
+The most data-rich locations are in Kansas and North Carolina, each with two unique locations. Below, we show a time series of when the first "Yes" of each phenophase was achieved in Kansas. 
+```{r plot_ks, echo = FALSE}
+ks <- df %>%
+  filter(State =="KS")
+
+fig_ks <- ggplot(ks, aes(x = Phenophase_ID, y = First_Yes_DOY)) +
+  geom_point(aes(color = Phenophase_Description)) +
+  facet_grid(rows = vars(First_Yes_Year), cols = vars(geo)) +
+  theme_bw(base_size = 12) +
+  coord_flip()
+print(fig_ks)
+```
+
+And the same for North Carolina.  
+```{r plot_nc, echo = FALSE}
+nc <- df %>%
+  filter(State =="NC")
+
+fig_nc <- ggplot(nc, aes(x = Phenophase_ID, y = First_Yes_DOY)) +
+  geom_point(aes(color = Phenophase_Description)) +
+  facet_grid(rows = vars(First_Yes_Year), cols = vars(geo)) +
+    theme_bw(base_size = 12) +
+
+  coord_flip()
+print(fig_nc)
+```
+
+### Diving deeper
+
+A total of 5 phenophases are represented in this dataset: Initial growth, Leaves, Flower heads, Open flowers, and Pollen release. There are 159 unique individual-year combinations with at least one phenophase observation. 
+```{r phenophases}
+match.df <- df %>%
+  group_by(Phenophase_ID) %>%
+  summarize(description = unique(Phenophase_Description))
+match.df
+
+sum(ifelse(c(table(df$Individual_ID, df$First_Yes_Year)) > 0, 1, 0))
+```
+
+The data are reorganized by individual-year combinations, for two responses: `First_Yes_DOY` and `NumDays_Since_Prior_No`. However, problems emerge in this transformation, arising from 34 instances where there are multiple `First_Yes_DOY` or `NumDays_Since_Prior_No` values for at least one phenophase. In theory, this should not occur unless the pattern of observation was "yes no yes no" in fairly close succession. Are there interpretable ways to clean this? 
+```{r reorg, warning = FALSE}
+wideyes.df <- df %>%
+  select(1:12, 14, 17) %>%
+  arrange(Phenophase_ID) %>%
+  tidyr::pivot_wider(names_from = Phenophase_ID, 
+                     values_from = First_Yes_DOY) %>%
+  rename(leaves = "489",
+         init_growth = "492",
+         flower_heads = "493",
+         open_flowers = "494",
+         pollen_release = "502")  %>%
+  mutate(init_growth = na_if(init_growth, "NULL"),
+         leaves = na_if(leaves, "NULL"),
+         flower_heads = na_if(flower_heads, "NULL"),
+         open_flowers = na_if(open_flowers, "NULL"),
+         pollen_release = na_if(pollen_release, "NULL"))
+
+wideno.df <- df %>%
+  select(1:12, 14, 19) %>%
+  arrange(Phenophase_ID) %>%
+  tidyr::pivot_wider(names_from = Phenophase_ID, 
+                     values_from = NumDays_Since_Prior_No)%>%
+  rename(leaves = "489",
+         init_growth = "492",
+         flower_heads = "493",
+         open_flowers = "494",
+         pollen_release = "502") %>%
+  mutate(init_growth = na_if(init_growth, "NULL"),
+         leaves = na_if(leaves, "NULL"),
+         flower_heads = na_if(flower_heads, "NULL"),
+         open_flowers = na_if(open_flowers, "NULL"),
+         pollen_release = na_if(pollen_release, "NULL"))
+
+dupyes_ind <- unique(c(which(unlist(lapply(wideyes.df$init_growth, length)) > 1),
+                    which(unlist(lapply(wideyes.df$leaves, length)) > 1),
+                    which(unlist(lapply(wideyes.df$flower_heads, length)) > 1),
+                    which(unlist(lapply(wideyes.df$open_flowers, length)) > 1)))
+length(dupyes_ind)
+
+dupno_ind <- unique(c(which(unlist(lapply(wideno.df$init_growth, length)) > 1),
+                    which(unlist(lapply(wideno.df$leaves, length)) > 1),
+                    which(unlist(lapply(wideno.df$flower_heads, length)) > 1),
+                    which(unlist(lapply(wideno.df$open_flowers, length)) > 1)))
+length(dupno_ind)
+```
+
+Another metric to check is that `First_Yes_DOY` should be progressively larger such that Initial growth < Leaves < Flower heads < Open flowers < Pollen release. We check this for individual-year combinations that A) don't have duplicate entries for the same phenophase and B) have at least 2 phenophase observations recorded. 
+```{r doy_check, message = FALSE}
+doy_check <- wideyes.df[-1 * dupyes_ind,] %>%
+  group_by(Individual_ID, First_Yes_Year) %>%
+  summarize(tot_obs = sum(!is.na(init_growth),
+                          !is.na(leaves),
+                          !is.na(flower_heads),
+                          !is.na(open_flowers),
+                          !is.na(pollen_release)),
+            init_growth = init_growth,
+            leaves = leaves,
+            flower_heads = flower_heads,
+            open_flowers = open_flowers,
+            pollen_release = pollen_release) %>%
+  filter(tot_obs > 1) %>%
+  tidyr::unnest(cols = c(init_growth, leaves, flower_heads, open_flowers, pollen_release)) %>%
+  mutate(transition1 = ifelse(leaves >= init_growth, TRUE, FALSE),
+         transition2 = ifelse(flower_heads >= leaves, TRUE, FALSE),
+         transition3 = ifelse(open_flowers >= flower_heads, TRUE, FALSE),
+         transition4 = ifelse(pollen_release >= open_flowers, TRUE, FALSE))
+
+which(doy_check[,9:12] == FALSE)
+```
+
+Of the 76 individual-years that met the criteria, there were 4 cases where `First_Yes_DOY` did not become progressively larger across phenophases.  
+
+Also of interest is the distribution of `NumDays_Since_Prior_No`. 
+```{r priorno, fig.width = 7, fig.height = 3.5}
+no_check <- wideno.df[-1 * dupno_ind,] %>%
+  tidyr::pivot_longer(13:17, names_to = "Phenophase", values_to = "days_since_prior_no") %>%
+   tidyr::unnest(cols = days_since_prior_no) %>%
+  tidyr::drop_na(days_since_prior_no)
+  
+fig_hist <- ggplot(no_check, aes(x = days_since_prior_no, fill = Phenophase)) +
+  geom_histogram(alpha = 0.6, position = "identity", bins = 50) +
+  theme_bw(base_size = 12)
+print(fig_hist)
+```
+
+For the two locations in Kansas in 2020, there are 33 individuals that account for the outlier at 73. I interpret this to mean that those individuals hadn't been censused in 73 days, and when they were, all already had unfurled leaves. This can likely be attributed to the early days of the pandemic. Otherwise, a majority of the observation intervals are below 10 days. 
+
+
+### Outstanding issues
+There are several outstanding obstacles to matching the *Sorghum* data. First, the ML code relies on calculating days to flag leaf emergence and days to flowering from sowing date, which is not appropriate for wild grown plants. One strategy could be to calculate days from `emergence`, which is akin to `Initial growth` in the NPN dataset. For this approach, only flowering date could be used, because flag leaf emergence is an agronomic indicator and not recorded by NPN. 
+
+Second, there is relatively high uncertainty in the flowering date due to the unprescribed observation interval. Comparing Kansas and North Carolina alone, the citizen scientist in Kansas has more frequent observations and therefore higher quality data.  Additional data quality issues (e.g., repeated observations for same individual-year-phenophase, nonsensical values) will result in diminished sample size. Given data quality and quantity, the prognosis is poor for a that applying the current *Sorghum* ML model to *Sorghastrum* data from NPN will yield meaningful results. 
+
+Finally, we continue to have concerns about the environmental variables. Here, we will use Daymet variables, for which windspeed, relative humidity, and VPD are not available,  unlike for the TERRA-REF data. More importantly, calculation cannot be replicated for the current iteration of the ML model, which includes taking averages of environmental variables between sowing date and flowering or flag leaf emergence date. That approach confounds the predictor and response variables and will need to be adjusted, hopefully to include the entire daily time series of environmental variables, before the NPN data can be ingested.  

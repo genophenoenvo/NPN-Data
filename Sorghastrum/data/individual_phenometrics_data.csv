@@ -1,0 +1,390 @@
+Site_ID,Latitude,Longitude,Elevation_in_Meters,State,Species_ID,Genus,Species,Common_Name,Kingdom,Individual_ID,Phenophase_ID,Phenophase_Description,First_Yes_Year,First_Yes_Month,First_Yes_Day,First_Yes_DOY,First_Yes_Julian_Date,NumDays_Since_Prior_No,Last_Yes_Year,Last_Yes_Month,Last_Yes_Day,Last_Yes_DOY,Last_Yes_Julian_Date,NumDays_Until_Next_No
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216380,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,1,305,2458059,6
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216381,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,10,24,297,2458051,8
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216381,489,Leaves (grasses),2017,11,14,318,2458072,7,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216382,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216383,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216384,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216385,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216386,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216386,494,Open flowers (grasses/sedges),2017,9,8,251,2458005,3,2017,10,10,283,2458037,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216387,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216387,492,Initial growth (grasses/sedges),2017,5,19,139,2457893,3,2017,5,19,139,2457893,4
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216387,494,Open flowers (grasses/sedges),2017,9,19,262,2458016,4,2017,10,10,283,2458037,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216388,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216388,492,Initial growth (grasses/sedges),2017,9,22,265,2458019,3,2017,9,22,265,2458019,4
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216388,494,Open flowers (grasses/sedges),2017,9,12,255,2458009,4,2017,9,15,258,2458012,4
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216388,494,Open flowers (grasses/sedges),2017,9,22,265,2458019,3,2017,10,10,283,2458037,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216389,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216389,492,Initial growth (grasses/sedges),2017,9,26,269,2458023,4,2017,9,26,269,2458023,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216390,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,10,17,290,2458044,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216390,489,Leaves (grasses),2017,11,7,311,2458065,6,2017,11,7,311,2458065,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216390,494,Open flowers (grasses/sedges),2017,9,19,262,2458016,4,2017,9,19,262,2458016,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216391,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216392,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216393,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216393,494,Open flowers (grasses/sedges),2017,9,5,248,2458002,14,2017,9,12,255,2458009,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216393,494,Open flowers (grasses/sedges),2017,9,19,262,2458016,4,2017,10,10,283,2458037,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216394,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216395,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,10,24,297,2458051,8
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216396,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216396,494,Open flowers (grasses/sedges),2017,9,5,248,2458002,14,2017,10,10,283,2458037,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216397,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216397,494,Open flowers (grasses/sedges),2017,9,5,248,2458002,14,2017,9,5,248,2458002,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216397,494,Open flowers (grasses/sedges),2017,9,15,258,2458012,3,2017,10,10,283,2458037,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216398,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216398,494,Open flowers (grasses/sedges),2017,9,8,251,2458005,3,2017,10,10,283,2458037,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216399,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216399,494,Open flowers (grasses/sedges),2017,8,22,234,2457988,15,2017,8,22,234,2457988,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216399,494,Open flowers (grasses/sedges),2017,9,22,265,2458019,3,2017,10,10,283,2458037,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216400,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216401,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216402,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216403,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,1,305,2458059,6
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216404,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216404,494,Open flowers (grasses/sedges),2017,9,5,248,2458002,14,2017,9,12,255,2458009,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216404,494,Open flowers (grasses/sedges),2017,9,19,262,2458016,4,2017,10,10,283,2458037,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216405,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216406,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216407,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216408,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216408,494,Open flowers (grasses/sedges),2017,10,3,276,2458030,4,2017,10,10,283,2458037,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216409,489,Leaves (grasses),2017,5,5,125,2457879,-9999,2017,11,14,318,2458072,-9999
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216410,489,Leaves (grasses),2017,9,12,255,2458009,-9999,2017,11,14,318,2458072,-9999
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216410,494,Open flowers (grasses/sedges),2017,9,12,255,2458009,-9999,2017,9,12,255,2458009,3
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216412,489,Leaves (grasses),2017,9,12,255,2458009,-9999,2017,11,14,318,2458072,-9999
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216412,494,Open flowers (grasses/sedges),2017,9,12,255,2458009,-9999,2017,9,12,255,2458009,3
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216415,489,Leaves (grasses),2017,9,12,255,2458009,-9999,2017,11,14,318,2458072,-9999
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216415,494,Open flowers (grasses/sedges),2017,9,12,255,2458009,-9999,2017,9,12,255,2458009,3
+29576,41.041515,-85.230026,228,IN,1695,Sorghastrum,nutans,Indiangrass,Plantae,156801,489,Leaves (grasses),2018,5,26,146,2458265,-9999,2018,10,19,292,2458411,-9999
+29576,41.041515,-85.230026,228,IN,1695,Sorghastrum,nutans,Indiangrass,Plantae,156801,492,Initial growth (grasses/sedges),2018,5,26,146,2458265,-9999,2018,5,26,146,2458265,24
+29576,41.041515,-85.230026,228,IN,1695,Sorghastrum,nutans,Indiangrass,Plantae,156801,492,Initial growth (grasses/sedges),2018,8,9,221,2458340,9,2018,9,19,262,2458381,19
+29576,41.041515,-85.230026,228,IN,1695,Sorghastrum,nutans,Indiangrass,Plantae,156801,493,Flower heads (grasses/sedges),2018,7,31,212,2458331,19,2018,8,9,221,2458340,41
+29576,41.041515,-85.230026,228,IN,1695,Sorghastrum,nutans,Indiangrass,Plantae,156801,493,Flower heads (grasses/sedges),2018,10,8,281,2458400,19,2018,10,8,281,2458400,11
+29576,41.041515,-85.230026,228,IN,1695,Sorghastrum,nutans,Indiangrass,Plantae,156801,494,Open flowers (grasses/sedges),2018,10,8,281,2458400,60,2018,10,8,281,2458400,11
+29576,41.041515,-85.230026,228,IN,1695,Sorghastrum,nutans,Indiangrass,Plantae,156806,489,Leaves (grasses),2018,5,8,128,2458247,12,2018,10,19,292,2458411,-9999
+29576,41.041515,-85.230026,228,IN,1695,Sorghastrum,nutans,Indiangrass,Plantae,156806,492,Initial growth (grasses/sedges),2018,5,8,128,2458247,-9999,2018,5,8,128,2458247,42
+29576,41.041515,-85.230026,228,IN,1695,Sorghastrum,nutans,Indiangrass,Plantae,156806,493,Flower heads (grasses/sedges),2018,7,31,212,2458331,19,2018,8,9,221,2458340,41
+29576,41.041515,-85.230026,228,IN,1695,Sorghastrum,nutans,Indiangrass,Plantae,156806,494,Open flowers (grasses/sedges),2018,8,9,221,2458340,9,2018,8,9,221,2458340,41
+29951,41.036747,-85.238861,229,IN,1695,Sorghastrum,nutans,Indiangrass,Plantae,161220,489,Leaves (grasses),2018,5,22,142,2458261,7,2018,8,27,239,2458358,-9999
+29951,41.036747,-85.238861,229,IN,1695,Sorghastrum,nutans,Indiangrass,Plantae,161220,492,Initial growth (grasses/sedges),2018,4,19,109,2458228,-9999,2018,5,22,142,2458261,6
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,489,Leaves (grasses),2018,5,11,131,2458250,-9999,2018,6,21,172,2458291,-9999
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,493,Flower heads (grasses/sedges),2018,5,11,131,2458250,-9999,2018,5,15,135,2458254,21
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,494,Open flowers (grasses/sedges),2018,5,11,131,2458250,-9999,2018,6,5,156,2458275,-9999
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,502,Pollen release (flowers),2018,5,15,135,2458254,4,2018,6,5,156,2458275,-9999
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,489,Leaves (grasses),2018,5,11,131,2458250,-9999,2018,6,16,167,2458286,-9999
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,493,Flower heads (grasses/sedges),2018,5,11,131,2458250,-9999,2018,5,15,135,2458254,21
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,494,Open flowers (grasses/sedges),2018,5,11,131,2458250,-9999,2018,6,5,156,2458275,-9999
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,502,Pollen release (flowers),2018,5,15,135,2458254,4,2018,6,5,156,2458275,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216380,489,Leaves (grasses),2018,4,9,99,2458218,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216380,492,Initial growth (grasses/sedges),2018,4,6,96,2458215,2,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216380,494,Open flowers (grasses/sedges),2018,9,24,267,2458386,7,2018,9,24,267,2458386,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216381,489,Leaves (grasses),2018,4,11,101,2458220,2,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216381,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,2,92,2458211,2
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216381,492,Initial growth (grasses/sedges),2018,4,6,96,2458215,2,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216382,489,Leaves (grasses),2018,4,11,101,2458220,2,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216382,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,2,92,2458211,2
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216382,492,Initial growth (grasses/sedges),2018,4,9,99,2458218,3,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216382,494,Open flowers (grasses/sedges),2018,9,17,260,2458379,7,2018,9,20,263,2458382,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216383,489,Leaves (grasses),2018,4,9,99,2458218,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216383,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216384,489,Leaves (grasses),2018,4,9,99,2458218,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216384,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216384,494,Open flowers (grasses/sedges),2018,9,24,267,2458386,11,2018,9,27,270,2458389,11
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216385,489,Leaves (grasses),2018,4,16,106,2458225,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216385,492,Initial growth (grasses/sedges),2018,4,6,96,2458215,2,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216385,494,Open flowers (grasses/sedges),2018,9,20,263,2458382,7,2018,9,20,263,2458382,4
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216386,489,Leaves (grasses),2018,4,4,94,2458213,2,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216386,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216387,489,Leaves (grasses),2018,4,9,99,2458218,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216387,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216387,494,Open flowers (grasses/sedges),2018,9,27,270,2458389,3,2018,9,27,270,2458389,11
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216388,489,Leaves (grasses),2018,4,23,113,2458232,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216388,492,Initial growth (grasses/sedges),2018,4,6,96,2458215,2,2018,4,6,96,2458215,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216388,492,Initial growth (grasses/sedges),2018,4,11,101,2458220,2,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216389,489,Leaves (grasses),2018,4,11,101,2458220,2,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216389,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,2,92,2458211,2
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216389,492,Initial growth (grasses/sedges),2018,4,9,99,2458218,3,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216390,489,Leaves (grasses),2018,4,16,106,2458225,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216390,492,Initial growth (grasses/sedges),2018,4,2,92,2458211,3,2018,4,2,92,2458211,2
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216390,492,Initial growth (grasses/sedges),2018,4,9,99,2458218,3,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216390,494,Open flowers (grasses/sedges),2018,8,28,240,2458359,14,2018,8,28,240,2458359,13
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216391,489,Leaves (grasses),2018,4,13,103,2458222,2,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216391,492,Initial growth (grasses/sedges),2018,4,2,92,2458211,3,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216391,494,Open flowers (grasses/sedges),2018,9,24,267,2458386,4,2018,9,27,270,2458389,11
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216392,489,Leaves (grasses),2018,4,9,99,2458218,3,2018,10,8,281,2458400,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216392,489,Leaves (grasses),2018,11,12,316,2458435,7,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216392,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,2,92,2458211,2
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216392,492,Initial growth (grasses/sedges),2018,4,6,96,2458215,2,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216393,489,Leaves (grasses),2018,4,9,99,2458218,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216393,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216393,494,Open flowers (grasses/sedges),2018,9,17,260,2458379,4,2018,9,17,260,2458379,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216394,489,Leaves (grasses),2018,4,9,99,2458218,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216394,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216394,494,Open flowers (grasses/sedges),2018,9,20,263,2458382,3,2018,9,20,263,2458382,4
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216395,489,Leaves (grasses),2018,4,18,108,2458227,2,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216395,492,Initial growth (grasses/sedges),2018,4,13,103,2458222,2,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216395,494,Open flowers (grasses/sedges),2018,9,17,260,2458379,7,2018,9,24,267,2458386,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216396,489,Leaves (grasses),2018,4,9,99,2458218,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216396,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,2,92,2458211,2
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216396,492,Initial growth (grasses/sedges),2018,4,6,96,2458215,2,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216396,494,Open flowers (grasses/sedges),2018,9,17,260,2458379,7,2018,9,20,263,2458382,4
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216396,494,Open flowers (grasses/sedges),2018,9,27,270,2458389,3,2018,9,27,270,2458389,11
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216397,489,Leaves (grasses),2018,4,20,110,2458229,2,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216397,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,20,110,2458229,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216397,494,Open flowers (grasses/sedges),2018,9,17,260,2458379,4,2018,9,20,263,2458382,4
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216398,489,Leaves (grasses),2018,4,23,113,2458232,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216398,492,Initial growth (grasses/sedges),2018,4,9,99,2458218,3,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216399,489,Leaves (grasses),2018,4,20,110,2458229,2,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216399,492,Initial growth (grasses/sedges),2018,4,11,101,2458220,2,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216399,494,Open flowers (grasses/sedges),2018,9,17,260,2458379,7,2018,9,20,263,2458382,7
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216400,489,Leaves (grasses),2018,4,16,106,2458225,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216400,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,2,92,2458211,2
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216400,492,Initial growth (grasses/sedges),2018,4,6,96,2458215,2,2018,5,8,128,2458247,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216400,494,Open flowers (grasses/sedges),2018,9,13,256,2458375,3,2018,9,13,256,2458375,4
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216401,489,Leaves (grasses),2018,4,11,101,2458220,2,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216401,492,Initial growth (grasses/sedges),2018,4,2,92,2458211,3,2018,5,8,128,2458247,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216401,494,Open flowers (grasses/sedges),2018,9,24,267,2458386,4,2018,9,24,267,2458386,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216402,489,Leaves (grasses),2018,4,23,113,2458232,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216402,492,Initial growth (grasses/sedges),2018,4,13,103,2458222,2,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216402,494,Open flowers (grasses/sedges),2018,9,17,260,2458379,7,2018,9,17,260,2458379,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216403,489,Leaves (grasses),2018,4,18,108,2458227,2,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216403,492,Initial growth (grasses/sedges),2018,4,11,101,2458220,2,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216404,489,Leaves (grasses),2018,4,16,106,2458225,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216404,492,Initial growth (grasses/sedges),2018,4,4,94,2458213,2,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216404,494,Open flowers (grasses/sedges),2018,9,20,263,2458382,3,2018,9,24,267,2458386,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216405,489,Leaves (grasses),2018,4,18,108,2458227,2,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216405,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,2,92,2458211,2
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216405,492,Initial growth (grasses/sedges),2018,4,6,96,2458215,2,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216406,489,Leaves (grasses),2018,4,9,99,2458218,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216406,492,Initial growth (grasses/sedges),2018,4,2,92,2458211,3,2018,4,2,92,2458211,2
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216406,492,Initial growth (grasses/sedges),2018,4,6,96,2458215,2,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216406,494,Open flowers (grasses/sedges),2018,9,10,253,2458372,13,2018,9,10,253,2458372,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216407,489,Leaves (grasses),2018,4,9,99,2458218,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216407,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216408,489,Leaves (grasses),2018,4,9,99,2458218,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216408,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216408,494,Open flowers (grasses/sedges),2018,9,20,263,2458382,3,2018,9,24,267,2458386,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216409,489,Leaves (grasses),2018,4,9,99,2458218,3,2018,11,12,316,2458435,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216409,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,23,113,2458232,15
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216409,494,Open flowers (grasses/sedges),2018,9,27,270,2458389,3,2018,9,27,270,2458389,11
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216410,489,Leaves (grasses),2018,4,11,101,2458220,2,2018,11,12,316,2458435,-9999
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216410,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,5,8,128,2458247,14
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216410,494,Open flowers (grasses/sedges),2018,9,24,267,2458386,4,2018,9,27,270,2458389,11
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216412,489,Leaves (grasses),2018,4,9,99,2458218,3,2018,11,12,316,2458435,-9999
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216412,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,5,8,128,2458247,14
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216415,489,Leaves (grasses),2018,4,9,99,2458218,5,2018,11,12,316,2458435,-9999
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216415,492,Initial growth (grasses/sedges),2018,3,30,89,2458208,7,2018,4,23,113,2458232,15
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,489,Leaves (grasses),2019,4,23,113,2458597,-9999,2019,10,4,277,2458761,-9999
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,492,Initial growth (grasses/sedges),2019,4,23,113,2458597,-9999,2019,4,23,113,2458597,34
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,493,Flower heads (grasses/sedges),2019,4,30,120,2458604,7,2019,5,27,147,2458631,4
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,493,Flower heads (grasses/sedges),2019,9,6,249,2458733,24,2019,9,20,263,2458747,14
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,494,Open flowers (grasses/sedges),2019,4,30,120,2458604,7,2019,5,27,147,2458631,4
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,489,Leaves (grasses),2019,4,23,113,2458597,-9999,2019,10,4,277,2458761,-9999
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,492,Initial growth (grasses/sedges),2019,4,23,113,2458597,-9999,2019,4,23,113,2458597,41
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,493,Flower heads (grasses/sedges),2019,4,30,120,2458604,7,2019,5,27,147,2458631,4
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,493,Flower heads (grasses/sedges),2019,9,6,249,2458733,24,2019,9,20,263,2458747,14
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,494,Open flowers (grasses/sedges),2019,4,30,120,2458604,7,2019,5,27,147,2458631,4
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,494,Open flowers (grasses/sedges),2019,9,6,249,2458733,24,2019,9,20,263,2458747,14
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184406,489,Leaves (grasses),2019,8,30,242,2458726,-9999,2019,12,8,342,2458826,6
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184406,492,Initial growth (grasses/sedges),2019,9,6,249,2458733,7,2019,10,27,300,2458784,6
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184406,492,Initial growth (grasses/sedges),2019,11,10,314,2458798,8,2019,11,17,321,2458805,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184406,493,Flower heads (grasses/sedges),2019,8,30,242,2458726,-9999,2019,9,13,256,2458740,8
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184406,494,Open flowers (grasses/sedges),2019,8,30,242,2458726,-9999,2019,9,13,256,2458740,8
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184414,489,Leaves (grasses),2019,8,30,242,2458726,-9999,2019,12,8,342,2458826,6
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184414,492,Initial growth (grasses/sedges),2019,9,6,249,2458733,7,2019,10,27,300,2458784,6
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184414,492,Initial growth (grasses/sedges),2019,11,10,314,2458798,8,2019,11,17,321,2458805,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184414,493,Flower heads (grasses/sedges),2019,8,30,242,2458726,-9999,2019,9,6,249,2458733,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184414,494,Open flowers (grasses/sedges),2019,9,6,249,2458733,7,2019,9,6,249,2458733,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184426,489,Leaves (grasses),2019,8,30,242,2458726,-9999,2019,12,8,342,2458826,6
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184426,492,Initial growth (grasses/sedges),2019,9,6,249,2458733,7,2019,10,27,300,2458784,6
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184426,492,Initial growth (grasses/sedges),2019,11,10,314,2458798,8,2019,11,17,321,2458805,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184426,493,Flower heads (grasses/sedges),2019,8,30,242,2458726,-9999,2019,9,6,249,2458733,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184426,494,Open flowers (grasses/sedges),2019,9,6,249,2458733,7,2019,9,6,249,2458733,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184426,502,Pollen release (flowers),2019,9,6,249,2458733,7,2019,9,6,249,2458733,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184434,489,Leaves (grasses),2019,9,6,249,2458733,7,2019,12,8,342,2458826,6
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184434,492,Initial growth (grasses/sedges),2019,9,6,249,2458733,7,2019,10,27,300,2458784,6
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184434,492,Initial growth (grasses/sedges),2019,11,10,314,2458798,8,2019,11,17,321,2458805,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184434,493,Flower heads (grasses/sedges),2019,8,30,242,2458726,-9999,2019,8,30,242,2458726,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184434,494,Open flowers (grasses/sedges),2019,8,30,242,2458726,-9999,2019,8,30,242,2458726,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184437,489,Leaves (grasses),2019,8,30,242,2458726,-9999,2019,12,8,342,2458826,6
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184437,492,Initial growth (grasses/sedges),2019,9,6,249,2458733,7,2019,10,27,300,2458784,6
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184437,492,Initial growth (grasses/sedges),2019,11,10,314,2458798,8,2019,11,17,321,2458805,7
+31649,42.327339,-72.525406,71,MA,1695,Sorghastrum,nutans,Indiangrass,Plantae,188521,489,Leaves (grasses),2019,5,14,134,2458618,50,2019,5,14,134,2458618,-9999
+31649,42.327339,-72.525406,71,MA,1695,Sorghastrum,nutans,Indiangrass,Plantae,188521,492,Initial growth (grasses/sedges),2019,5,14,134,2458618,50,2019,5,14,134,2458618,-9999
+31649,42.327339,-72.525406,71,MA,1695,Sorghastrum,nutans,Indiangrass,Plantae,188521,493,Flower heads (grasses/sedges),2019,5,14,134,2458618,50,2019,5,14,134,2458618,-9999
+31649,42.327339,-72.525406,71,MA,1695,Sorghastrum,nutans,Indiangrass,Plantae,188521,494,Open flowers (grasses/sedges),2019,5,14,134,2458618,50,2019,5,14,134,2458618,-9999
+31649,42.327339,-72.525406,71,MA,1695,Sorghastrum,nutans,Indiangrass,Plantae,188521,502,Pollen release (flowers),2019,5,14,134,2458618,50,2019,5,14,134,2458618,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216380,489,Leaves (grasses),2019,4,29,119,2458603,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216380,492,Initial growth (grasses/sedges),2019,4,29,119,2458603,3,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216381,489,Leaves (grasses),2019,4,22,112,2458596,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216381,492,Initial growth (grasses/sedges),2019,4,22,112,2458596,3,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216382,489,Leaves (grasses),2019,4,19,109,2458593,2,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216382,492,Initial growth (grasses/sedges),2019,4,15,105,2458589,3,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216382,494,Open flowers (grasses/sedges),2019,9,3,246,2458730,8,2019,9,23,266,2458750,8
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216383,489,Leaves (grasses),2019,4,22,112,2458596,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216383,492,Initial growth (grasses/sedges),2019,4,12,102,2458586,2,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216383,494,Open flowers (grasses/sedges),2019,9,17,260,2458744,7,2019,9,23,266,2458750,8
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216384,489,Leaves (grasses),2019,4,22,112,2458596,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216384,492,Initial growth (grasses/sedges),2019,4,15,105,2458589,3,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216385,489,Leaves (grasses),2019,4,15,105,2458589,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216385,492,Initial growth (grasses/sedges),2019,4,12,102,2458586,2,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216386,489,Leaves (grasses),2019,4,22,112,2458596,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216386,492,Initial growth (grasses/sedges),2019,4,12,102,2458586,2,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216386,494,Open flowers (grasses/sedges),2019,9,17,260,2458744,7,2019,10,1,274,2458758,6
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216387,489,Leaves (grasses),2019,4,22,112,2458596,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216387,492,Initial growth (grasses/sedges),2019,4,22,112,2458596,3,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216388,489,Leaves (grasses),2019,4,22,112,2458596,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216388,492,Initial growth (grasses/sedges),2019,4,22,112,2458596,3,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216388,494,Open flowers (grasses/sedges),2019,9,17,260,2458744,7,2019,9,23,266,2458750,8
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216389,489,Leaves (grasses),2019,4,15,105,2458589,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216389,492,Initial growth (grasses/sedges),2019,4,12,102,2458586,2,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216389,494,Open flowers (grasses/sedges),2019,9,17,260,2458744,7,2019,9,17,260,2458744,6
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216390,489,Leaves (grasses),2019,4,19,109,2458593,2,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216390,492,Initial growth (grasses/sedges),2019,4,15,105,2458589,3,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216391,489,Leaves (grasses),2019,4,19,109,2458593,2,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216391,492,Initial growth (grasses/sedges),2019,4,12,102,2458586,2,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216391,494,Open flowers (grasses/sedges),2019,9,17,260,2458744,7,2019,10,1,274,2458758,6
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216393,489,Leaves (grasses),2019,4,12,102,2458586,2,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216393,492,Initial growth (grasses/sedges),2019,4,12,102,2458586,2,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216393,494,Open flowers (grasses/sedges),2019,9,3,246,2458730,8,2019,10,1,274,2458758,6
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216394,489,Leaves (grasses),2019,4,15,105,2458589,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216394,492,Initial growth (grasses/sedges),2019,4,15,105,2458589,3,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216394,494,Open flowers (grasses/sedges),2019,9,17,260,2458744,7,2019,9,23,266,2458750,8
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216395,489,Leaves (grasses),2019,4,15,105,2458589,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216395,492,Initial growth (grasses/sedges),2019,4,10,100,2458584,2,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216395,494,Open flowers (grasses/sedges),2019,9,10,253,2458737,7,2019,9,23,266,2458750,8
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216396,489,Leaves (grasses),2019,4,12,102,2458586,2,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216396,492,Initial growth (grasses/sedges),2019,4,12,102,2458586,2,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216396,494,Open flowers (grasses/sedges),2019,9,3,246,2458730,8,2019,10,1,274,2458758,6
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216397,489,Leaves (grasses),2019,4,24,114,2458598,2,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216397,492,Initial growth (grasses/sedges),2019,4,22,112,2458596,3,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216397,494,Open flowers (grasses/sedges),2019,9,3,246,2458730,8,2019,9,23,266,2458750,8
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216398,489,Leaves (grasses),2019,4,15,105,2458589,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216398,492,Initial growth (grasses/sedges),2019,4,10,100,2458584,2,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216399,489,Leaves (grasses),2019,4,15,105,2458589,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216399,492,Initial growth (grasses/sedges),2019,4,10,100,2458584,2,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216399,494,Open flowers (grasses/sedges),2019,8,22,234,2458718,3,2019,9,23,266,2458750,8
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216400,489,Leaves (grasses),2019,4,22,112,2458596,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216400,492,Initial growth (grasses/sedges),2019,4,12,102,2458586,2,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216401,489,Leaves (grasses),2019,4,19,109,2458593,2,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216401,492,Initial growth (grasses/sedges),2019,4,12,102,2458586,2,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216401,494,Open flowers (grasses/sedges),2019,9,10,253,2458737,7,2019,9,23,266,2458750,8
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216402,489,Leaves (grasses),2019,4,19,109,2458593,2,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216402,492,Initial growth (grasses/sedges),2019,4,15,105,2458589,3,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216402,494,Open flowers (grasses/sedges),2019,9,10,253,2458737,7,2019,9,23,266,2458750,8
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216403,489,Leaves (grasses),2019,4,19,109,2458593,2,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216403,492,Initial growth (grasses/sedges),2019,4,15,105,2458589,3,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216404,489,Leaves (grasses),2019,4,15,105,2458589,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216404,492,Initial growth (grasses/sedges),2019,4,3,93,2458577,2,2019,4,3,93,2458577,2
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216404,492,Initial growth (grasses/sedges),2019,4,15,105,2458589,3,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216404,494,Open flowers (grasses/sedges),2019,9,10,253,2458737,7,2019,9,23,266,2458750,8
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216405,489,Leaves (grasses),2019,4,19,109,2458593,2,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216405,492,Initial growth (grasses/sedges),2019,4,12,102,2458586,2,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216406,489,Leaves (grasses),2019,4,19,109,2458593,2,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216406,492,Initial growth (grasses/sedges),2019,4,12,102,2458586,2,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216407,489,Leaves (grasses),2019,4,22,112,2458596,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216407,492,Initial growth (grasses/sedges),2019,4,15,105,2458589,3,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216408,489,Leaves (grasses),2019,4,22,112,2458596,3,2019,4,26,116,2458600,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216408,489,Leaves (grasses),2019,5,6,126,2458610,7,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216408,492,Initial growth (grasses/sedges),2019,4,3,93,2458577,2,2019,4,3,93,2458577,2
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216408,492,Initial growth (grasses/sedges),2019,4,15,105,2458589,3,2019,4,26,116,2458600,3
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216408,492,Initial growth (grasses/sedges),2019,5,6,126,2458610,7,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216408,494,Open flowers (grasses/sedges),2019,9,10,253,2458737,7,2019,9,23,266,2458750,8
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216409,489,Leaves (grasses),2019,4,15,105,2458589,3,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216409,492,Initial growth (grasses/sedges),2019,4,12,102,2458586,2,2019,7,1,182,2458666,14
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216410,489,Leaves (grasses),2019,4,22,112,2458596,3,2019,11,13,317,2458801,-9999
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216410,492,Initial growth (grasses/sedges),2019,4,15,105,2458589,3,2019,7,1,182,2458666,14
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216410,494,Open flowers (grasses/sedges),2019,9,10,253,2458737,7,2019,9,23,266,2458750,8
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216412,489,Leaves (grasses),2019,4,19,109,2458593,2,2019,11,13,317,2458801,-9999
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216412,492,Initial growth (grasses/sedges),2019,4,10,100,2458584,2,2019,7,1,182,2458666,14
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216415,489,Leaves (grasses),2019,4,15,105,2458589,3,2019,11,13,317,2458801,-9999
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216415,492,Initial growth (grasses/sedges),2019,4,15,105,2458589,3,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,246321,489,Leaves (grasses),2019,7,1,182,2458666,-9999,2019,11,13,317,2458801,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,246321,492,Initial growth (grasses/sedges),2019,7,1,182,2458666,-9999,2019,7,1,182,2458666,14
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,246321,494,Open flowers (grasses/sedges),2019,9,3,246,2458730,8,2019,9,23,266,2458750,8
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,489,Leaves (grasses),2020,4,3,94,2458943,-9999,2020,11,6,311,2459160,-9999
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,493,Flower heads (grasses/sedges),2020,4,18,109,2458958,7,2020,6,7,159,2459008,6
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,494,Open flowers (grasses/sedges),2020,4,18,109,2458958,7,2020,6,7,159,2459008,6
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,494,Open flowers (grasses/sedges),2020,6,30,182,2459031,10,2020,7,4,186,2459035,16
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,489,Leaves (grasses),2020,4,3,94,2458943,-9999,2020,11,6,311,2459160,-9999
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,493,Flower heads (grasses/sedges),2020,5,3,124,2458973,15,2020,6,7,159,2459008,6
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,494,Open flowers (grasses/sedges),2020,5,3,124,2458973,15,2020,6,13,165,2459014,7
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,494,Open flowers (grasses/sedges),2020,6,30,182,2459031,10,2020,7,4,186,2459035,16
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184406,489,Leaves (grasses),2020,4,9,100,2458949,11,2020,5,16,137,2458986,-9999
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184406,492,Initial growth (grasses/sedges),2020,1,26,26,2458875,7,2020,1,26,26,2458875,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184406,492,Initial growth (grasses/sedges),2020,3,9,69,2458918,8,2020,5,16,137,2458986,-9999
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184414,489,Leaves (grasses),2020,5,3,124,2458973,9,2020,5,16,137,2458986,-9999
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184414,492,Initial growth (grasses/sedges),2020,1,19,19,2458868,7,2020,1,26,26,2458875,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184414,492,Initial growth (grasses/sedges),2020,3,9,69,2458918,8,2020,3,29,89,2458938,11
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184414,492,Initial growth (grasses/sedges),2020,5,3,124,2458973,9,2020,5,16,137,2458986,-9999
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184426,489,Leaves (grasses),2020,4,24,115,2458964,7,2020,5,16,137,2458986,-9999
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184426,492,Initial growth (grasses/sedges),2020,1,26,26,2458875,7,2020,1,26,26,2458875,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184426,492,Initial growth (grasses/sedges),2020,3,9,69,2458918,8,2020,3,29,89,2458938,11
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184426,492,Initial growth (grasses/sedges),2020,4,24,115,2458964,7,2020,5,16,137,2458986,-9999
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184434,489,Leaves (grasses),2020,4,24,115,2458964,7,2020,5,16,137,2458986,-9999
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184434,492,Initial growth (grasses/sedges),2020,1,26,26,2458875,7,2020,1,26,26,2458875,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184434,492,Initial growth (grasses/sedges),2020,3,9,69,2458918,8,2020,3,29,89,2458938,11
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184434,492,Initial growth (grasses/sedges),2020,4,24,115,2458964,7,2020,5,16,137,2458986,-9999
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184437,489,Leaves (grasses),2020,4,24,115,2458964,7,2020,5,16,137,2458986,-9999
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184437,492,Initial growth (grasses/sedges),2020,1,26,26,2458875,7,2020,1,26,26,2458875,7
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184437,492,Initial growth (grasses/sedges),2020,3,9,69,2458918,8,2020,3,29,89,2458938,11
+31041,35.622356,-82.566689,708,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,184437,492,Initial growth (grasses/sedges),2020,4,24,115,2458964,7,2020,5,16,137,2458986,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216380,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216381,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216382,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216382,494,Open flowers (grasses/sedges),2020,8,26,239,2459088,5,2020,8,28,241,2459090,39
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216383,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216384,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216385,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216386,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216387,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216388,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216389,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216390,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216391,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216393,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216394,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216395,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216396,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216396,494,Open flowers (grasses/sedges),2020,8,28,241,2459090,2,2020,8,28,241,2459090,39
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216397,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216398,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216399,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216400,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216401,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216402,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216403,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216404,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216405,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216406,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216407,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216408,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216409,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216410,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216412,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35883,39.101952,-96.563065,392,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,216415,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+35882,39.099045,-96.565102,388,KS,1695,Sorghastrum,nutans,Indiangrass,Plantae,246321,489,Leaves (grasses),2020,6,1,153,2459002,73,2020,11,2,307,2459156,-9999
+40218,44.7355,-95.450699,302,MN,1695,Sorghastrum,nutans,Indiangrass,Plantae,248026,489,Leaves (grasses),2020,9,12,256,2459105,-9999,2020,10,2,276,2459125,-9999
+40218,44.7355,-95.450699,302,MN,1695,Sorghastrum,nutans,Indiangrass,Plantae,248026,492,Initial growth (grasses/sedges),2020,9,18,262,2459111,6,2020,9,18,262,2459111,-9999
+40218,44.7355,-95.450699,302,MN,1695,Sorghastrum,nutans,Indiangrass,Plantae,248026,493,Flower heads (grasses/sedges),2020,9,12,256,2459105,-9999,2020,10,2,276,2459125,-9999
+40218,44.7355,-95.450699,302,MN,1695,Sorghastrum,nutans,Indiangrass,Plantae,248026,494,Open flowers (grasses/sedges),2020,9,12,256,2459105,-9999,2020,10,2,276,2459125,-9999
+40218,44.7355,-95.450699,302,MN,1695,Sorghastrum,nutans,Indiangrass,Plantae,248026,502,Pollen release (flowers),2020,9,12,256,2459105,-9999,2020,10,2,276,2459125,-9999
+40432,44.270477,-96.773003,487,SD,1695,Sorghastrum,nutans,Indiangrass,Plantae,248507,489,Leaves (grasses),2020,9,18,262,2459111,-9999,2020,11,4,309,2459158,-9999
+40432,44.270477,-96.773003,487,SD,1695,Sorghastrum,nutans,Indiangrass,Plantae,248507,492,Initial growth (grasses/sedges),2020,9,18,262,2459111,-9999,2020,11,4,309,2459158,-9999
+40432,44.270477,-96.773003,487,SD,1695,Sorghastrum,nutans,Indiangrass,Plantae,248507,493,Flower heads (grasses/sedges),2020,9,18,262,2459111,-9999,2020,11,4,309,2459158,-9999
+40432,44.270477,-96.773003,487,SD,1695,Sorghastrum,nutans,Indiangrass,Plantae,248507,494,Open flowers (grasses/sedges),2020,9,18,262,2459111,-9999,2020,11,4,309,2459158,-9999
+40432,44.270477,-96.773003,487,SD,1695,Sorghastrum,nutans,Indiangrass,Plantae,248507,502,Pollen release (flowers),2020,9,18,262,2459111,-9999,2020,11,4,309,2459158,-9999
+40483,44.261517,-96.703911,487,SD,1695,Sorghastrum,nutans,Indiangrass,Plantae,249871,489,Leaves (grasses),2020,9,13,257,2459106,-9999,2020,10,11,285,2459134,-9999
+40483,44.261517,-96.703911,487,SD,1695,Sorghastrum,nutans,Indiangrass,Plantae,249871,492,Initial growth (grasses/sedges),2020,9,13,257,2459106,-9999,2020,10,11,285,2459134,-9999
+40483,44.261517,-96.703911,487,SD,1695,Sorghastrum,nutans,Indiangrass,Plantae,249871,493,Flower heads (grasses/sedges),2020,9,13,257,2459106,-9999,2020,9,13,257,2459106,-9999
+40483,44.261517,-96.703911,487,SD,1695,Sorghastrum,nutans,Indiangrass,Plantae,249871,502,Pollen release (flowers),2020,10,11,285,2459134,28,2020,10,11,285,2459134,-9999
+41379,43.114437,-89.655678,260,WI,1695,Sorghastrum,nutans,Indiangrass,Plantae,251500,489,Leaves (grasses),2020,10,8,282,2459131,-9999,2020,10,23,297,2459146,-9999
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,489,Leaves (grasses),2021,3,23,82,2459297,-9999,2021,4,19,109,2459324,-9999
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,493,Flower heads (grasses/sedges),2021,4,12,102,2459317,7,2021,4,19,109,2459324,-9999
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172204,494,Open flowers (grasses/sedges),2021,4,19,109,2459324,7,2021,4,19,109,2459324,-9999
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,489,Leaves (grasses),2021,3,23,82,2459297,-9999,2021,4,19,109,2459324,-9999
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,493,Flower heads (grasses/sedges),2021,4,12,102,2459317,7,2021,4,19,109,2459324,-9999
+31356,36.217243,-81.687439,996,NC,1695,Sorghastrum,nutans,Indiangrass,Plantae,172205,494,Open flowers (grasses/sedges),2021,4,19,109,2459324,7,2021,4,19,109,2459324,-9999
+42612,37.653145,-92.083344,256,MO,1695,Sorghastrum,nutans,Indiangrass,Plantae,261358,494,Open flowers (grasses/sedges),2021,4,3,93,2459308,7,2021,4,3,93,2459308,6
+42612,37.653145,-92.083344,256,MO,1695,Sorghastrum,nutans,Indiangrass,Plantae,261358,502,Pollen release (flowers),2021,3,13,72,2459287,6,2021,4,25,115,2459330,-9999
